@@ -6,13 +6,13 @@ A work-in-progress LLM-powered assistant for answering Medicare billing, coverag
 
 🚧 Goals
 
-    Fine-tune an open-source LLM (starting with LLaMA 3–8B) using Medicare billing and provider data
-    Implement a RAG pipeline to retrieve relevant Medicare coverage policies (NCDs/LCDs)
-    Deploy a FastAPI backend for querying the model
-    Optionally build a lightweight UI using Streamlit or Gradio
+ - Fine-tune an open-source LLM (starting with LLaMA 3–8B) using Medicare billing and provider data
+ - Implement a RAG pipeline to retrieve relevant Medicare coverage policies (NCDs/LCDs)
+ - Deploy a FastAPI backend for querying the model
+ - Optionally build a lightweight UI using Streamlit or Gradio
 
 📁 Planned Directory Structure
-
+```
 medicare-chat-assistant/
 │
 ├── api/ # FastAPI backend for chat interface
@@ -25,11 +25,14 @@ medicare-chat-assistant/
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
+```
 
 Future Features (Planned)
 
-    Fine-tune using LoRA with Medicare claims data
-    Embed Medicare policy documents and set up vector search
-    Integrate model and retriever via API
-    Deploy web-based chat interface
+ - Fine-tune using LoRA with Medicare claims data
+ - Embed Medicare policy documents and set up vector search
+ - Integrate model and retriever via API
+ - Deploy web-based chat interface
+
+ 
 =======
