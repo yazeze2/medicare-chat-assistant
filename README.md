@@ -1,4 +1,4 @@
-Medicare Chat Assistant
+# Medicare Chat Assistant
 
 A work-in-progress LLM-powered assistant for answering Medicare billing, coverage, and policy questions. The project aims to combine a fine-tuned LLaMA 3–8B model with policy retrieval using Retrieval-Augmented Generation (RAG).
 
@@ -32,3 +32,4 @@ Future Features (Planned)
     Embed Medicare policy documents and set up vector search
     Integrate model and retriever via API
     Deploy web-based chat interface
+=======
