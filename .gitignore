@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environments
+.env/
+.venv/
+env/
+venv/
+
+# OS files
+.DS_Store
+
+# Model checkpoints and datasets
+models/
+*.ckpt
+*.bin
+*.pt
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+#data
+data/
