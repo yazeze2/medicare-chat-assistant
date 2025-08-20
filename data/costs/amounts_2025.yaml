@@ -1,0 +1,65 @@
+year: 2025
+
+part_a:
+  premium:
+    premium_free_qualifies: true           # most people qualify via work history
+    reduced_premium_monthly: 285.00        # 30–39 quarters of Medicare taxes
+    full_premium_monthly: 518.00           # <30 quarters
+  deductible_per_benefit_period: 1676
+  inpatient_hospital_coinsurance:
+    day_1_60_after_deductible: 0
+    day_61_90_per_day: 419
+    lifetime_reserve_days_per_day: 838      # up to 60 lifetime days
+    day_150_plus: "all costs"
+  skilled_nursing_facility_coinsurance:
+    day_1_20_per_day: 0
+    day_21_100_per_day: 209.50
+    day_101_plus: "all costs"
+  home_health:
+    services_copay: 0
+    dme_coinsurance_percent: 20
+  hospice:
+    services_copay: 0
+    outpatient_drugs_copay_up_to: 5.00
+    inpatient_respite_coinsurance_percent: 5   # capped by inpatient deductible for the year
+
+part_b:
+  premium_standard_monthly: 185.00
+  deductible_annual: 257
+  coinsurance_percent_after_deductible: 20
+  irmaa:                                      # income-related monthly adjustment amounts
+    thresholds_magi_2023:
+      single: [106000, 133000, 161000, 193000, 500000]      # upper bounds of brackets
+      married_joint: [212000, 266000, 322000, 386000, 750000]
+      married_separate: [0, 0, 0, 0, 0]        # handled separately at SSA (highest brackets)
+    total_monthly_premium_by_bracket_single:   # includes base premium
+      - 185.00          # ≤ $106,000
+      - 259.70
+      - 334.40
+      - 409.10
+      - 483.80
+      - 628.90          # > $500,000
+    # Note: joint/sep values follow SSA tables; use SSA link below for full matrices.
+
+part_d:
+  national_base_premium: 36.78                 # used for LEP & IRMAA calculations (not your plan’s premium)
+  deductible_max: 590                          # plans may set a lower (or $0) deductible
+  oop_cap_annual: 2000                         # new cap from the IRA—$0 cost sharing above this
+  coinsurance_initial_coverage_percent: 25     # typical in the defined standard benefit
+  irmaa_addon_monthly_by_bracket_single:       # added to plan premium (does not replace it)
+    - 0.00            # ≤ $106,000
+    - 13.70
+    - 35.70
+    - 57.70
+    - 79.70
+    - 85.80          # > $500,000
+  extra_help_2025:
+    premium: 0
+    deductible: 0
+    copay_generic_up_to: 4.90
+    copay_brand_up_to: 12.15
+
+notes:
+  - "Coinsurance and deductibles reset by benefit period where applicable (e.g., Part A inpatient)."
+  - "IRMAA thresholds use 2023 MAGI for 2025 premiums. Married-filing-separately rules differ at high incomes."
+  - "Part D $2,000 cap applies to covered drugs; separate Prescription Payment Plan allows monthly smoothing."

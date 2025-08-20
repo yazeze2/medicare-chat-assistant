@@ -59,5 +59,14 @@ Future Features (Planned)
  - Integrate model and retriever via API
  - Deploy web-based chat interface
 
- 
+Data Sources
+
+This project uses official Medicare references curated for retrieval-augmented generation:
+- **Medicare & You 2025 Handbook** – high-level beneficiary guide.
+- **CMS Manuals (Pubs. 100-02, 100-04)** – detailed benefit and claims processing rules.
+- **National Coverage Determinations (NCDs)** – national-level coverage policies.
+- **HCPCS Code Set (2025)** – billing and procedure codes.
+- **Medicare Cost Reference (YAML)** – structured deductibles, premiums, and coinsurance for 2025.
+- **Enrollment Periods Reference (CMS)** – rules for IEP, GEP, SEP, and OEP.
+(See [`data/README.md`](data/README.md) for details.) 
 =======
